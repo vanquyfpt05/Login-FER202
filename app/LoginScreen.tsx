@@ -56,26 +56,6 @@ export default function LoginScreen({
             </CardHeader>
 
             <CardContent className="space-y-6">
-                {/* Social Login Buttons */}
-                {/* <div className="grid grid-cols-2 gap-4 SocialLogin">
-                    <Button
-                        variant="outline"
-                        type="button"
-                        className=" w-[200px] bg-white/5 border-white/10 text-white hover:bg-white/10 hover:text-white"
-                    >
-                        <GoogleLogo size={18} />
-                        Google
-                    </Button>
-                    <Button
-                        variant="outline"
-                        type="button"
-                        className=" w-[200px] bg-white/5 border-white/10 text-white hover:bg-white/10 hover:text-white"
-                    >
-                        <Facebook size={18} className="text-[#4267B2]" />
-                        Facebook
-                    </Button>
-                </div> */}
-
 
 
                 {/* Login Form */}
@@ -179,7 +159,15 @@ export default function LoginScreen({
                     <Button
                         disabled={isLoading}
                         type="submit"
-                        className="button w-full  bg-blue-600 hover:bg-blue-500 text-white font-bold h-12 text-base rounded-xl shadow-lg shadow-blue-500/20 transition-all hover:shadow-blue-500/30"
+                        className="button h-12 px-6
+    rounded-xl
+    text-base font-semibold text-white
+    bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
+    shadow-lg shadow-blue-500/25
+    transition-all duration-300
+    hover:scale-[1.03]
+    hover:shadow-purple-500/40
+    active:scale-[0.97]"
                         size="lg"
                     >
                         {isLoading ? (

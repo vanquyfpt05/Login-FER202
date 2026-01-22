@@ -103,7 +103,7 @@ export default function Home() {
 
         {/* Standalone Main Content Container */}
         <div className="login-container flex-1 w-full glass overflow-hidden relative backdrop-blur-[4px]">
-          <div className="absolute translate-x-20 gap-4 inset-0 flex items-center justify-center p-4 md:p-8 overflow-y-auto custom-scrollbar">
+          <div className="absolute inset-0 flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-start md:justify-center p-4 md:p-8 overflow-y-auto custom-scrollbar">
             {!currentUser ? (
               <><NewCard /><LoginScreen
                 mode={authMode}

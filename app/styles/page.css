@@ -5,13 +5,14 @@
 .login-container {
   border: 1px solid #0a0a0a;
   border-radius: 25px;
+  
 }
 .login-page {
-  
-  width: 450px;
-  height: 620px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 620px;
   padding: 20px;
-  backdrop-filter: 100px;
+  backdrop-filter: blur(100px);
   box-shadow:
     28px 40px 100px rgba(0, 0, 0, 0.65),
     10px 0 35px rgba(120, 160, 255, 0.25),
@@ -19,15 +20,14 @@
 }
 .input {
   padding-left: 20px;
-  width: 420px;
+  width: 100%;
   display: flex;
-  margin-left: -5px;
   margin-top: 25px;
 }
 .button {
-  width: 170px;
-  margin-top: 60px;
-  margin-left: 120px;
+  width: 150px;
+  margin-top: 40px;
+  margin-left: 130px;
 }
 .checkbox {
   margin-left: 8px;
@@ -41,7 +41,8 @@
 }
 
 .cardnew {
- width: 190px;
+ width: 100%;
+ max-width: 190px;
   height: 254px;
   background: #fff;
   border: 3px solid #000;
@@ -55,9 +56,10 @@
 
 /* New Premium Card Styling */
 .new-card-premium {
-  width: 420px;
-  height: 420px;
-  max-width: 95vw;
+  width: 100%;
+  max-width: 420px;
+  /* height: 420px; Remove fixed height to allow content to fit */
+  min-height: 420px;
   padding: 24px;
   backdrop-filter: blur(100px);
   box-shadow:
@@ -69,6 +71,7 @@
   overflow: hidden;
   transition: all 0.3s ease;
   display: flex;
+  flex-direction: column; /* Ensure vertical stacking of children */
 }
 
 
